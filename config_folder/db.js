@@ -1,7 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const url = 'mongodb://test_test:test_test_1@ds157064.mlab.com:57064/let_endu_test'
+const url = process.env.DB;
 
 module.exports = (app) => {
     mongoose.connect(url,{ useNewUrlParser: true }, (err)=> {

@@ -4,6 +4,7 @@ const app = require('express')();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3500;
+require('dotenv').config();
 const config = require('./config_folder');
 
 //set default and required middleware
